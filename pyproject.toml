@@ -1,0 +1,24 @@
+[project]
+name = "fastapi-tutorial"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "neethunazrin", email = "neethunazrin1995@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "aiosqlite>=0.22.1",
+    "fastapi>=0.163.1",
+    "fastapi-users[sqlalchemy]>=15.0.5",
+    "imagekitio>=5.13.0",
+    "python-dotenv>=1.2.4",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[project.scripts]
+fastapi-tutorial = "fastapi_tutorial:main"
+
+[build-system]
+requires = ["uv_build>=0.13.8,<0.14.0"]
+build-backend = "uv_build"
